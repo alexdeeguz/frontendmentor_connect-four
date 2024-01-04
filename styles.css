@@ -1,0 +1,76 @@
+:root {
+  --Black: #000;
+  --White: #fff;
+  --Purple: #7945ff;
+  --Yellow: #ffce67;
+  --Red: #fd6687;
+}
+
+@font-face {
+    font-family: Space Grotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+/* MENU START */
+.main-menu {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 203px 20px;
+  background: var(--Purple);
+}
+
+.main-menu > button > span,
+.menu__button--rules {
+  text-transform: uppercase;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-menu > button {
+  border-radius: 20px;
+  border: 3px solid var(--Black);
+  box-shadow: 0px 10px 0px 0px var(--Black);
+  padding: 20px 17px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu > button > svg {
+  width: 82px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.menu__button--cpu {
+  background: var(--Red);
+  color: var(--White);
+}
+
+.menu__button--player {
+  background: var(--Yellow);
+}
+
+.menu__button--rules {
+  background: var(--White);
+}
+
+#ovals {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  margin-bottom: 79px;
+
+  align-self: center;
+}
+/* MENU END */
+
+
